@@ -59,6 +59,26 @@
 }
 
 /* Begin styling the report items here! */
-.reports {
 
+/* settings for this grid layout borrowed from Toast Grid, https://daneden.github.io/Toast/ */
+.reports {
+  list-style: none;
+  margin-left: -20px;
+}
+.reports_item {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: -.25em;
+  min-height: 1px;
+  padding-left: 20px;
+  vertical-align: top; 
+  padding-bottom: 30px;
+}
+.col_1-of-3 {
+  width: 33.33333%;
+}
+@media screen and (max-width: 768px) {
+  .col_1-of-2 {
+    width: 50%;
+  }
 }
