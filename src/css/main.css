@@ -74,11 +74,22 @@
   vertical-align: top; 
   padding-bottom: 30px;
 }
-.col_1-of-3 {
+.col_1-of-3--lg {
   width: 33.33333%;
 }
 @media screen and (max-width: 768px) {
-  .col_1-of-2 {
+  .col_1-of-2--md {
     width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .col_1-of-1--sm {
+    width: 100%;
+  }
+}
+/* fixing the issue with the spacing of report cover images at this in-between breakpoint */
+@media screen and (min-width: 768px) and (max-width: 830px) {
+  .reports_cover {
+      width: 90%;
   }
 }
